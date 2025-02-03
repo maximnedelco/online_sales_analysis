@@ -21,4 +21,9 @@ class ProductManager:
         print(f"Valoarea totala a tuturor produselor {total_val} lei")
         
         
+    def remove_product(self, name):
+        self.products = [p for p in self.products if p.name != name]
+
+        
+        
     
